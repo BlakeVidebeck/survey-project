@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body{
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: 0 5px;
+}
+
+/*header styles*/
+
+header{
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px 0;
+    font-size: 1.6rem;
+}
+    
+#title{
+    margin-bottom: 10px;
+}
+
+/*form head styles*/
+#survey-form{
+    padding: 10px;
+    border-radius: 3px;
+    background: rgba(27, 27, 50, 0.8);
+    }
+
+.head .form-group{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.head label{
+    width: 25%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.head input{
+    width: 75%;
+}
+
+/*general form styles*/
+.form-group{
+    padding-bottom: 15px;
+    font-size: 2.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group p{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.form-control{
+    border: 1px solid silver;
+    border-radius: 3px;
+    background-color: #eee;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.clue{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-textarea{
+    min-height: 120px;
+}
+    
+.submit-button{
+    font-size: 2rem;
+    background-color: lightsalmon;
+    padding: 20px 0;
+    margin: 20px 0;
+    height: auto;
+    border-radius: 3px;
+}
+
+/*desktop styles*/
+@media only screen and (min-width: 961px) {
+
+    header{
+        font-size: 2.5rem;
+    }
+
+    #survey-form{
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .head{
+        margin-bottom: 30px;
+    }
+
+    .head .form-group{
+        margin: 10px auto;
+        padding: 0;
+        width: 55%;
+    }
+
+    .form-group{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-group p{
+        margin: 10px auto;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .form-control{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .flex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .checkbox{
+        flex-flow: column wrap;
+        height: 200px;
+    }
+
+    .submit-button{
+        width: 55%;
+        margin: 30px auto;
+    }
+
+    .submit-button:hover{
+        cursor: pointer;
+        background-color: blanchedalmond
+    }
+}
